@@ -1,0 +1,84 @@
+Delivered-To: alanywang96@gmail.com
+Received: by 2002:aa7:dccb:0:b0:506:b244:9cad with SMTP id w11csp352864edu;
+        Thu, 27 Apr 2023 08:15:12 -0700 (PDT)
+X-Received: by 2002:a17:902:dacb:b0:1a3:dcc1:307d with SMTP id q11-20020a170902dacb00b001a3dcc1307dmr7606753plx.23.1682608511906;
+        Thu, 27 Apr 2023 08:15:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1682608511; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HXlm97pfkuZFh7elx406R+HTSMABv8Y4iCw6Q4N9wqcp8a/bNle3ldm4iWN2sZ71QE
+         Cy9k/LvknNsJq3a3TlOZtVhFjPxUYZgZ/sxf0TGW1pmnama5xyFXE1e5tbL0dt1VqZc5
+         D+qkc1dxdBR9gHNNeNxlAq/P0uFi2rfmg27jJ+iW6Swhpu/olELYxz4/fU4aLF1Qe1W7
+         aGUvK222uQKCnPGZWfljk4tojMCudOe57PQ92GqrV3wq9lC/o2IML4X+YNW0GVzpzijQ
+         X+NSE54ByjCh+lr1COp+5cDMujCXXQufenhF5nqD0fgBuCYzVbd4EcBQYHUj2QaTeZs6
+         jlsw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=IGZFsmS8GzAFPmlYyY8hdwopdxa2doCqi+xli4tLthg=;
+        b=c1mSLO1nJllptyEuU22pAsGjqkld0MmfkfdJTdaEfwqxItMSjKxPuTS2d1qfZbL93g
+         gJPJCrnoMbhOBWXqQobbIvzIcDbX+MR6JmRN98mAynvRJ7dvyLEDTPCDEJLktoDn5JLh
+         VRxZeBt1bqkSXharm+d3ZpbkgwvxTARx2jmGeMyl/yN3GdYDabaCd4pAy9AgV+miNAOw
+         7OfvTChYwYsgG6jIW6eJGF+jO92puOjkfWTud23DzDyAQn/exCUOfPaZF5sKyj2QT8f1
+         Wt8SYrrMS9GLpmlfIp16OUG5bk/W+qeYqmmWgVG/qoksD3BXCggbjjwu0oWiZ59M/jNH
+         OWqg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=nZZRnlvr;
+       spf=pass (google.com: domain of wy.dong96@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=wy.dong96@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <wy.dong96@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id o8-20020a170902778800b001a6820df7e9sor9796609pll.171.2023.04.27.08.15.11
+        for <alanywang96@gmail.com>
+        (Google Transport Security);
+        Thu, 27 Apr 2023 08:15:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of wy.dong96@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=nZZRnlvr;
+       spf=pass (google.com: domain of wy.dong96@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=wy.dong96@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1682608511; x=1685200511;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=IGZFsmS8GzAFPmlYyY8hdwopdxa2doCqi+xli4tLthg=;
+        b=nZZRnlvrUGxTLBKL3sLVsmlXCqkmkNEzXDceMy3acv0Uj0OabVeCDlinNz0WCvcXyh
+         BwOM7aOqliWZVpwKMSWb4y/axaFWOEvo2YPlMjcFIQ5LpG0ivgjab8BdGih/EYjlvOr2
+         oqN21dvey1jqtaD/qyUQRI9ZGJ9lPkyj501GVOk45BQkN4kH0oGZDfy4Fd6sc4r7eZhE
+         dISbkZl8pY+xUVv6OUMRvzPtmZLhbcB922C2gLPVjv03xYrhMlx2dQDvuReUm+hCnu9R
+         h2TiNlP9MPO5RChqFcFXrrVBVqRZSVW7yVUDVVh0YEyUV5VMYB1VGxG6umjGVojcaBrK
+         HY9Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1682608511; x=1685200511;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=IGZFsmS8GzAFPmlYyY8hdwopdxa2doCqi+xli4tLthg=;
+        b=F+k4s6AOq9GsrWAij4OGH8FdCGgecSrYaQYh3j6Ud1oAyNMPgVDoYhl8CJcVDWTZgh
+         Z4MkoX4KQJKd2cuWo+NHKCvE5+yQespKIKJbh1QojZkJVFI16uPQ4zSi6DIs5fr0N9Wn
+         ejmWXVtIEzmVJruKzcyf70QhcbJGACj/Kgg6y1wAiwDE9WZdStAGcvqIr/MjgvNxQI2b
+         /VshBNYov5ujJWV+y6OC7D2xZEIfBGVQqfk2yy7jhWadiJGLb2LSgqSzoCgDlWeD6PRc
+         cPRhqyzzVarG+gwITvXrJRlmAEoQw2Qad6VgwO5TXQMBNtB2xTQf1qOVmW8XNAytOtui
+         YXtA==
+X-Gm-Message-State: AC+VfDzDl/jXjenmqqC7fvzyYxdryr/X8zv9vmWwZ/YznSAeiGwypyJ4
+	D/7HW6WmuQRDuLrbB7eydzdIn4+PEmMoFEMm9OgMPv6X8wmWBTZO
+X-Google-Smtp-Source: ACHHUZ5P7VNuVOvYm5Qwgtd8m8JHWXHuWHMUZ63EBArp980XxzDt6T/s2LwDQqTwWPLd8ytnWQhavso2nEBB3yPkyM4=
+X-Received: by 2002:a17:90b:33ca:b0:247:4e73:cbdd with SMTP id
+ lk10-20020a17090b33ca00b002474e73cbddmr7443708pjb.9.1682608510894; Thu, 27
+ Apr 2023 08:15:10 -0700 (PDT)
+MIME-Version: 1.0
+From: Alan Wang <wy.dong96@gmail.com>
+Date: Thu, 27 Apr 2023 22:14:59 +0700
+Message-ID: <CAKd2Egxt6tjtQzmt5kGsbiiq_Qmqosh7yAE5SpaSqgSXhtWf8g@mail.gmail.com>
+Subject: Register for zkBlind
+To: "alanywang96@gmail.com" <alanywang96@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000096851e05fa52d2d4"
+
+--00000000000096851e05fa52d2d4
+Content-Type: text/plain; charset="UTF-8"
+
+["0xefcbe272b0febe3edadc034af7a3f53ed35aaa53","9ea2c44a6c411cddd0351db03d87b127b64fd420104e0e072d39b29f6318e6302e6f6390a4f17f3f77a83c7b12aa692c1e6fae925a399e0800afe9de71ebab7c"]
+
+--00000000000096851e05fa52d2d4
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">[&quot;0xefcbe272b0febe3edadc034af7a3f53ed35aaa53&quot;,&quot;9ea2c44a6c411cddd0351db03d87b127b64fd420104e0e072d39b29f6318e6302e6f6390a4f17f3f77a83c7b12aa692c1e6fae925a399e0800afe9de71ebab7c&quot;]<br></div>
+
+--00000000000096851e05fa52d2d4--

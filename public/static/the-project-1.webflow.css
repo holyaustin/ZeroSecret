@@ -1,0 +1,621 @@
+.body {
+  height: auto;
+  background-color: #181818;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  padding-bottom: 24px;
+  background-image: url('./images/FP_BG_Transparent.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding-top: 0px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.nav-link {
+  font-family: Jura, sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-link-2 {
+  font-family: Jura, sans-serif;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-link-3 {
+  font-family: Jura, sans-serif;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.navbar {
+  padding-top: 10px;
+  background-color: transparent;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  font-family: Jura, sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.image {
+  width: 35%;
+  max-width: none;
+  padding-right: 20px;
+}
+
+.image-2 {
+  width: 35%;
+  padding-left: 20px;
+}
+
+.image-3 {
+  width: 150px;
+  max-width: none;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.container-2 {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.text-block {
+  font-family: Jura, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.container-3 {
+  padding-top: 45px;
+}
+
+.text-block-2 {
+  width: auto;
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+  font-family: Jura, sans-serif;
+  color: #2ecdc9;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-4 {
+  line-height: 28px;
+  text-align: center;
+}
+
+.text-block-3 {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-right: 140px;
+  padding-left: 140px;
+  font-family: Jura, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.text-block-3.centered {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.container-5 {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.text-block-4 {
+  padding-top: 30px;
+  font-family: Jura, sans-serif;
+  color: #2ecdc9;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.container-6 {
+  position: static;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.bold-text {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.image-4 {
+  display: inline-block;
+  width: 50%;
+  max-width: none;
+}
+
+.column {
+  text-align: right;
+}
+
+.column-2 {
+  text-align: left;
+}
+
+.image-5 {
+  display: none;
+}
+
+.container-7 {
+  display: none;
+}
+
+.text-span {
+  color: #e06880;
+}
+
+.text-span-2 {
+  color: #a3ea88;
+}
+
+@media screen and (min-width: 1280px) {
+  .text-block-3 {
+    text-align: justify;
+  }
+
+  .text-block-3.centered {
+    padding-top: 20px;
+  }
+
+  .container-5 {
+    padding-top: 30px;
+  }
+
+  .image-4 {
+    width: 50%;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav-link-2 {
+    font-size: 12px;
+  }
+
+  .nav-link-3 {
+    font-size: 12px;
+  }
+
+  .image-3 {
+    width: 175px;
+  }
+
+  .text-block {
+    font-size: 14px;
+  }
+
+  .text-block-2 {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+
+  .text-block-3 {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .text-block-3.centered {
+    padding-top: 20px;
+  }
+
+  .container-5 {
+    padding-top: 30px;
+  }
+
+  .text-block-4 {
+    padding-top: 30px;
+    font-size: 13px;
+  }
+
+  .container-6 {
+    padding-top: 40px;
+  }
+
+  .bold-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    padding-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .section {
+    height: auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .image {
+    width: 40%;
+  }
+
+  .image-2 {
+    width: 40%;
+  }
+
+  .image-3 {
+    width: 200px;
+  }
+
+  .container-2 {
+    padding-top: 60px;
+  }
+
+  .text-block {
+    font-size: 15px;
+  }
+
+  .text-block-2 {
+    padding-top: 60px;
+    font-size: 15px;
+  }
+
+  .text-block-3 {
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: justify;
+  }
+
+  .text-block-3.centered {
+    padding-top: 20px;
+  }
+
+  .container-5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .text-block-4 {
+    padding-top: 36px;
+  }
+
+  .container-6 {
+    padding-top: 36px;
+  }
+
+  .image-4 {
+    display: block;
+    width: 65%;
+    height: auto;
+    max-height: 180px;
+    min-height: 80px;
+  }
+
+  .link-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section {
+    background-image: url('./images/FP_BG_991_Transparent_2.png');
+    background-position: 50% 50%;
+  }
+
+  .nav-menu {
+    width: auto;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #181818;
+    text-align: center;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  .nav-link {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .nav-link-2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .nav-link-3 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .navbar {
+    padding-top: 0px;
+    text-align: left;
+  }
+
+  .container {
+    padding-right: 20px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: left;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .image-2 {
+    display: none;
+  }
+
+  .container-2 {
+    padding-top: 20px;
+  }
+
+  .container-3 {
+    padding-top: 20px;
+  }
+
+  .text-block-2 {
+    padding-top: 20px;
+  }
+
+  .text-block-3 {
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: justify;
+  }
+
+  .container-5 {
+    padding-top: 20px;
+  }
+
+  .bold-text {
+    font-size: 18px;
+  }
+
+  .image-4 {
+    width: 150px;
+  }
+
+  .menu-button.w--open {
+    background-color: #181818;
+  }
+
+  .image-5 {
+    display: block;
+  }
+
+  .container-7 {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .lottie-animation-2 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    background-image: url('./images/FP_BG_768_Transparent.png');
+  }
+
+  .nav-menu {
+    height: auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-color: #181818;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  .nav-link-2 {
+    text-align: center;
+  }
+
+  .nav-link-3 {
+    text-align: center;
+  }
+
+  .navbar {
+    padding-top: 0px;
+  }
+
+  .text-block-3 {
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: justify;
+  }
+
+  .container-5 {
+    padding-top: 30px;
+  }
+
+  .menu-button {
+    overflow: hidden;
+    padding: 15px;
+    background-color: #181818;
+  }
+
+  .menu-button.w--open {
+    background-color: #181818;
+  }
+
+  .lottie-animation {
+    width: 50px;
+    height: 50px;
+  }
+
+  .lottie-animation-2 {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .body {
+    overflow: visible;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  .section {
+    height: auto;
+    padding-bottom: 0px;
+    background-position: 50% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .nav-menu {
+    overflow: visible;
+    height: auto;
+    min-height: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: #181818;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  .navbar {
+    padding-top: 0px;
+  }
+
+  .container {
+    padding-right: 0px;
+    background-color: transparent;
+  }
+
+  .image-3 {
+    width: 125px;
+  }
+
+  .container-2 {
+    padding-top: 0px;
+  }
+
+  .text-block-2 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .text-block-3 {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: justify;
+  }
+
+  .container-6 {
+    padding-bottom: 36px;
+  }
+
+  .lottie-animation-2 {
+    background-color: transparent;
+  }
+}
+

@@ -1,0 +1,1 @@
+// output of this circom equals to the input of the address
